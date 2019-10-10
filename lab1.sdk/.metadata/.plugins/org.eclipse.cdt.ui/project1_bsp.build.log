@@ -1,0 +1,89 @@
+15:16:07 **** Auto Build of project project1_bsp ****
+make -k all 
+make: Warning: File `Makefile' has modification time 40 s in the future
+Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: Warning: File `Makefile' has modification time 35 s in the future
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make include in microblaze_0/libsrc/standalone_v6_8/src
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: Warning: File `config.make' has modification time 38 s in the future
+make[2]: Warning: File `../config.make' has modification time 37 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: Warning: File `Makefile' has modification time 34 s in the future
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make include in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: Warning: File `Makefile' has modification time 33 s in the future
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make include in microblaze_0/libsrc/cpu_v2_8/src
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: Warning: File `Makefile' has modification time 24 s in the future
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make include in microblaze_0/libsrc/gpio_v4_3/src
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: Warning: File `Makefile' has modification time 33 s in the future
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make include in microblaze_0/libsrc/intc_v3_8/src
+make -C microblaze_0/libsrc/intc_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: Warning: File `Makefile' has modification time 33 s in the future
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+make[1]: Warning: File `Makefile' has modification time 33 s in the future
+mb-ar: creating ../../../lib/libxil.a
+make[2]: Warning: File `Makefile' has modification time 32 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: Warning: File `config.make' has modification time 36 s in the future
+Compiling standalone
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: Warning: File `Makefile' has modification time 29 s in the future
+Compiling uartlite
+make[2]: Warning: File `Makefile' has modification time 28 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make libs in microblaze_0/libsrc/bram_v4_2/src
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Warning: File `Makefile' has modification time 27 s in the future
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+make[2]: Warning: File `Makefile' has modification time 27 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make libs in microblaze_0/libsrc/cpu_v2_8/src
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: Warning: File `Makefile' has modification time 18 s in the future
+Compiling cpu
+make[2]: Warning: File `Makefile' has modification time 18 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make libs in microblaze_0/libsrc/gpio_v4_3/src
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Warning: File `Makefile' has modification time 27 s in the future
+Compiling gpio
+make[2]: Warning: File `Makefile' has modification time 26 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+Running Make libs in microblaze_0/libsrc/intc_v3_8/src
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Warning: File `Makefile' has modification time 26 s in the future
+make -C microblaze_0/libsrc/intc_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+make[2]: Warning: File `Makefile' has modification time 25 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+Finished building libraries
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+15:16:17 Build Finished (took 9s.318ms)
+

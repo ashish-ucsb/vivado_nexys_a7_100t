@@ -1,0 +1,433 @@
+20:18:35 INFO  : Registering command handlers for SDK TCF services
+20:18:37 INFO  : Launching XSCT server: xsct -n -interactive /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/temp_xsdb_launch_script.tcl
+20:18:42 INFO  : XSCT server has started successfully.
+20:18:42 INFO  : Successfully done setting XSCT server connection channel  
+20:18:46 INFO  : Successfully done setting SDK workspace  
+20:18:46 INFO  : Processing command line option -hwspec /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper.hdf.
+20:37:41 INFO  : Refreshed build settings on project project1
+20:38:51 INFO  : Inferring section assignments and sizes from elf file: /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf
+20:39:50 INFO  : Successfully generated /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/src/lscript.ld.
+20:39:50 INFO  : Applying linker script to all configurations of project project1.
+20:39:50 INFO  : Setting rebuild state to true for all configurations of project project1.
+20:40:13 INFO  : Inferring section assignments and sizes from elf file: /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf
+20:51:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:51:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+20:52:02 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+20:52:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+20:52:24 INFO  : 'fpga -state' command is executed.
+20:52:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:24 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+20:52:24 INFO  : 'jtag frequency' command is executed.
+20:52:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:52:24 INFO  : Context for processor 'microblaze_0' is selected.
+20:52:24 INFO  : Processor reset is completed for 'microblaze_0'.
+20:52:24 INFO  : Context for processor 'microblaze_0' is selected.
+20:52:24 INFO  : The application '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf' is downloaded to processor 'microblaze_0'.
+20:52:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+dow /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf
+----------------End of Script----------------
+
+20:52:25 INFO  : Memory regions updated for context MicroBlaze #0
+20:52:25 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+20:52:25 INFO  : Context for processor 'microblaze_0' is selected.
+20:52:25 INFO  : 'con' command is executed.
+20:52:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+con
+----------------End of Script----------------
+
+20:52:25 INFO  : Launch script is exported to file '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_project1.elf_on_local.tcl'
+20:53:23 INFO  : Disconnected from the channel tcfchan#1.
+20:56:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+20:56:31 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+20:56:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+20:56:44 INFO  : 'fpga -state' command is executed.
+20:56:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:44 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+20:56:44 INFO  : 'jtag frequency' command is executed.
+20:56:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:56:44 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:44 INFO  : Processor reset is completed for 'microblaze_0'.
+20:56:44 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:44 INFO  : The application '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf' is downloaded to processor 'microblaze_0'.
+20:56:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+dow /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf
+----------------End of Script----------------
+
+20:56:44 INFO  : Memory regions updated for context MicroBlaze #0
+20:56:44 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+20:56:44 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:44 INFO  : 'con' command is executed.
+20:56:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+con
+----------------End of Script----------------
+
+20:56:44 INFO  : Launch script is exported to file '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_project1.elf_on_local.tcl'
+20:57:53 INFO  : Refreshed build settings on project project1
+20:58:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:58:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+20:58:23 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+20:58:55 INFO  : Disconnected from the channel tcfchan#2.
+15:12:10 INFO  : Registering command handlers for SDK TCF services
+15:12:12 INFO  : Launching XSCT server: xsct -n -interactive /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/temp_xsdb_launch_script.tcl
+15:12:18 INFO  : XSCT server has started successfully.
+15:12:28 INFO  : Successfully done setting XSCT server connection channel  
+15:12:28 INFO  : Processing command line option -hwspec /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper.hdf.
+15:12:28 INFO  : Successfully done setting SDK workspace  
+15:12:28 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+15:16:07 INFO  : Refreshed build settings on project project1
+15:16:07 INFO  : Refreshed build settings on project project1_new
+15:18:50 INFO  : Inferring section assignments and sizes from elf file: /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1_new/Debug/project1_new.elf
+15:20:05 INFO  : Successfully generated /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1_new/src/lscript.ld.
+15:20:05 INFO  : Applying linker script to all configurations of project project1_new.
+15:20:05 INFO  : Setting rebuild state to true for all configurations of project project1_new.
+15:21:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+15:21:54 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+15:22:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+15:22:14 INFO  : 'fpga -state' command is executed.
+15:22:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:22:15 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+15:22:15 INFO  : 'jtag frequency' command is executed.
+15:22:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:22:15 INFO  : Context for processor 'microblaze_0' is selected.
+15:22:15 INFO  : Processor reset is completed for 'microblaze_0'.
+15:22:15 INFO  : Context for processor 'microblaze_0' is selected.
+15:22:15 INFO  : The application '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1_new/Debug/project1_new.elf' is downloaded to processor 'microblaze_0'.
+15:22:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+dow /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1_new/Debug/project1_new.elf
+----------------End of Script----------------
+
+15:22:15 INFO  : Memory regions updated for context MicroBlaze #0
+15:22:15 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:22:15 INFO  : Context for processor 'microblaze_0' is selected.
+15:22:15 INFO  : 'con' command is executed.
+15:22:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+con
+----------------End of Script----------------
+
+15:22:15 INFO  : Launch script is exported to file '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_project1_new.elf_on_local.tcl'
+15:24:45 INFO  : Disconnected from the channel tcfchan#1.
+15:24:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:24:47 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+15:24:47 INFO  : 'jtag frequency' command is executed.
+15:24:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+15:24:49 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+15:24:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:24:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:24:49 INFO  : System reset is completed.
+15:24:52 INFO  : 'after 3000' command is executed.
+15:24:52 INFO  : Context for processor 'microblaze_0' is selected.
+15:24:52 INFO  : The application '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1_new/Debug/project1_new.elf' is downloaded to processor 'microblaze_0'.
+15:24:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0
+fpga -file /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+dow /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1_new/Debug/project1_new.elf
+----------------End of Script----------------
+
+15:24:52 INFO  : Memory regions updated for context MicroBlaze #0
+15:24:52 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:24:52 INFO  : Context for processor 'microblaze_0' is selected.
+15:24:52 INFO  : 'con' command is executed.
+15:24:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+con
+----------------End of Script----------------
+
+15:24:52 INFO  : Launch script is exported to file '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_project1_new.elf_on_local.tcl'
+15:36:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:36:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+15:36:44 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+15:36:56 INFO  : Disconnected from the channel tcfchan#2.
+15:37:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:37:23 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+15:37:23 INFO  : 'jtag frequency' command is executed.
+15:37:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+15:37:25 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+15:37:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:37:25 INFO  : Context for processor 'microblaze_0' is selected.
+15:37:25 INFO  : System reset is completed.
+15:37:28 INFO  : 'after 3000' command is executed.
+15:37:28 INFO  : Context for processor 'microblaze_0' is selected.
+15:37:28 INFO  : The application '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1_new/Debug/project1_new.elf' is downloaded to processor 'microblaze_0'.
+15:37:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0
+fpga -file /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+dow /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1_new/Debug/project1_new.elf
+----------------End of Script----------------
+
+15:37:28 INFO  : Memory regions updated for context MicroBlaze #0
+15:37:28 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:37:29 INFO  : Context for processor 'microblaze_0' is selected.
+15:37:29 INFO  : 'con' command is executed.
+15:37:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+con
+----------------End of Script----------------
+
+15:37:29 INFO  : Launch script is exported to file '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_project1_new.elf_on_local.tcl'
+15:38:33 INFO  : Disconnected from the channel tcfchan#3.
+15:38:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:38:34 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+15:38:34 INFO  : 'jtag frequency' command is executed.
+15:38:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+15:38:36 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+15:38:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:38:36 INFO  : Context for processor 'microblaze_0' is selected.
+15:38:36 INFO  : System reset is completed.
+15:38:39 INFO  : 'after 3000' command is executed.
+15:38:40 INFO  : Context for processor 'microblaze_0' is selected.
+15:38:40 INFO  : The application '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1_new/Debug/project1_new.elf' is downloaded to processor 'microblaze_0'.
+15:38:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0
+fpga -file /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+dow /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1_new/Debug/project1_new.elf
+----------------End of Script----------------
+
+15:38:40 INFO  : Memory regions updated for context MicroBlaze #0
+15:38:40 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:38:40 INFO  : Context for processor 'microblaze_0' is selected.
+15:38:40 INFO  : 'con' command is executed.
+15:38:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+con
+----------------End of Script----------------
+
+15:38:40 INFO  : Launch script is exported to file '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_project1_new.elf_on_local.tcl'
+15:43:25 INFO  : Disconnected from the channel tcfchan#4.
+16:11:41 INFO  : Registering command handlers for SDK TCF services
+16:11:43 INFO  : Launching XSCT server: xsct -n -interactive /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/temp_xsdb_launch_script.tcl
+16:11:49 INFO  : XSCT server has started successfully.
+16:12:00 INFO  : Successfully done setting XSCT server connection channel  
+16:12:00 INFO  : Processing command line option -hwspec /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper.hdf.
+16:12:00 INFO  : Successfully done setting SDK workspace  
+16:12:01 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+16:18:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:19:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:35:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:48 INFO  : Launching XSCT server: xsct -n -interactive /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/temp_xsdb_launch_script.tcl
+16:44:52 INFO  : XSCT server has started successfully.
+16:45:01 INFO  : Successfully done setting XSCT server connection channel  
+16:45:01 INFO  : Successfully done setting SDK workspace  
+16:45:11 INFO  : Registering command handlers for SDK TCF services
+16:45:11 INFO  : Processing command line option -hwspec /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper.hdf.
+16:45:12 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+16:48:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:48:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:48:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+16:48:50 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+16:49:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+16:49:17 INFO  : 'fpga -state' command is executed.
+16:49:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:17 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+16:49:17 INFO  : 'jtag frequency' command is executed.
+16:49:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:49:17 INFO  : Context for processor 'microblaze_0' is selected.
+16:49:17 INFO  : Processor reset is completed for 'microblaze_0'.
+16:49:17 INFO  : Context for processor 'microblaze_0' is selected.
+16:49:17 INFO  : The application '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf' is downloaded to processor 'microblaze_0'.
+16:49:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+dow /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf
+----------------End of Script----------------
+
+16:49:17 INFO  : Memory regions updated for context MicroBlaze #0
+16:49:17 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+16:49:17 INFO  : Context for processor 'microblaze_0' is selected.
+16:49:17 INFO  : 'con' command is executed.
+16:49:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+con
+----------------End of Script----------------
+
+16:49:17 INFO  : Launch script is exported to file '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_project1.elf_on_local.tcl'
+16:49:32 INFO  : Disconnected from the channel tcfchan#1.
+16:49:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+16:49:33 INFO  : 'fpga -state' command is executed.
+16:49:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:33 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+16:49:33 INFO  : 'jtag frequency' command is executed.
+16:49:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:49:33 INFO  : Context for processor 'microblaze_0' is selected.
+16:49:33 INFO  : Processor reset is completed for 'microblaze_0'.
+16:49:33 INFO  : Context for processor 'microblaze_0' is selected.
+16:49:34 INFO  : The application '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf' is downloaded to processor 'microblaze_0'.
+16:49:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+dow /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf
+----------------End of Script----------------
+
+16:49:34 INFO  : Memory regions updated for context MicroBlaze #0
+16:49:34 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+16:49:34 INFO  : Context for processor 'microblaze_0' is selected.
+16:49:34 INFO  : 'con' command is executed.
+16:49:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+con
+----------------End of Script----------------
+
+16:49:34 INFO  : Launch script is exported to file '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_project1.elf_on_local.tcl'
+16:49:57 INFO  : Disconnected from the channel tcfchan#2.
+16:50:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+16:50:04 INFO  : 'fpga -state' command is executed.
+16:50:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:50:04 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+16:50:05 INFO  : 'jtag frequency' command is executed.
+16:50:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:50:05 INFO  : Context for processor 'microblaze_0' is selected.
+16:50:05 INFO  : Processor reset is completed for 'microblaze_0'.
+16:50:05 INFO  : Context for processor 'microblaze_0' is selected.
+16:50:05 INFO  : The application '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf' is downloaded to processor 'microblaze_0'.
+16:50:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+dow /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf
+----------------End of Script----------------
+
+16:50:05 INFO  : Memory regions updated for context MicroBlaze #0
+16:50:05 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+16:50:05 INFO  : Context for processor 'microblaze_0' is selected.
+16:50:05 INFO  : 'con' command is executed.
+16:50:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+con
+----------------End of Script----------------
+
+16:50:05 INFO  : Launch script is exported to file '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_project1.elf_on_local.tcl'
+16:50:29 INFO  : Disconnected from the channel tcfchan#3.
+16:50:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+16:50:51 INFO  : 'fpga -state' command is executed.
+16:50:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:50:52 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+16:50:52 INFO  : 'jtag frequency' command is executed.
+16:50:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:50:52 INFO  : Context for processor 'microblaze_0' is selected.
+16:50:52 INFO  : Processor reset is completed for 'microblaze_0'.
+16:50:52 INFO  : Context for processor 'microblaze_0' is selected.
+16:50:52 INFO  : The application '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf' is downloaded to processor 'microblaze_0'.
+16:50:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+dow /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf
+----------------End of Script----------------
+
+16:50:52 INFO  : Memory regions updated for context MicroBlaze #0
+16:50:52 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+16:50:53 INFO  : Context for processor 'microblaze_0' is selected.
+16:50:53 INFO  : 'con' command is executed.
+16:50:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+con
+----------------End of Script----------------
+
+16:50:53 INFO  : Launch script is exported to file '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_project1.elf_on_local.tcl'
+16:51:13 INFO  : Disconnected from the channel tcfchan#4.
+16:51:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:51:14 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+16:51:15 INFO  : 'jtag frequency' command is executed.
+16:51:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+16:51:17 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+16:51:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:51:20 ERROR : no targets found with "name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"". available targets:
+  1* xc7a100t
+     2  MicroBlaze Debug Module at USER2
+        3  MicroBlaze #0 (Running)
+16:51:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0
+fpga -file /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+----------------End of Script----------------
+
+16:51:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:51:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+16:51:46 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+16:51:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:51:52 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4C432A' is selected.
+16:51:52 INFO  : 'jtag frequency' command is executed.
+16:51:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0' command is executed.
+16:51:55 INFO  : FPGA configured successfully with bitstream "/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit"
+16:51:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:51:55 INFO  : Context for processor 'microblaze_0' is selected.
+16:51:56 INFO  : System reset is completed.
+16:51:59 INFO  : 'after 3000' command is executed.
+16:51:59 INFO  : Context for processor 'microblaze_0' is selected.
+16:51:59 INFO  : The application '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf' is downloaded to processor 'microblaze_0'.
+16:51:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A" && level==0} -index 0
+fpga -file /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/system_wrapper_hw_platform_0/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+dow /fs/student/ashishvyas/Vivado/lab1/lab1.sdk/project1/Debug/project1.elf
+----------------End of Script----------------
+
+16:51:59 INFO  : Memory regions updated for context MicroBlaze #0
+16:51:59 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+16:51:59 INFO  : Context for processor 'microblaze_0' is selected.
+16:51:59 INFO  : 'con' command is executed.
+16:51:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292A4C432A"} -index 0
+con
+----------------End of Script----------------
+
+16:51:59 INFO  : Launch script is exported to file '/fs/student/ashishvyas/Vivado/lab1/lab1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_project1.elf_on_local.tcl'
+16:53:10 INFO  : Disconnected from the channel tcfchan#5.
